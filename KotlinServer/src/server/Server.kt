@@ -60,6 +60,7 @@ class Server {
                 }, nextID)
             parse(player)
         }
+
     }
 
 }

@@ -16,6 +16,6 @@ fun joinGame(id : Int, joinPlayer: Player) {
 }
 
 val goodThread : Int get() = threads.sortedBy { it.runnedGames.size }[0].id
-var threads = listOf<SmartThread>()
-var games = mutableMapOf<Int, Player>()
-var readyGames = mutableMapOf<Int, Pair<Player?, Player?>>()
+val threads = mutableListOf<SmartThread>()
+val games = mutableMapOf<Int, Player>()
+val readyGames = mutableMapOf<Int, Pair<Player?, Player?>>()
